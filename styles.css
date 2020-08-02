@@ -1,0 +1,389 @@
+/* font-family: 'Cormorant Garamond', serif;
+font-family: 'El Messiri', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Old Standard TT', serif; */
+
+@import"http://code.ionicframework.com/1.3.3/css/ionic.min.css";
+
+body, html{
+    margin-top: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: #f0ece3;
+    overflow: auto;
+    overflow-x: hidden;
+    
+}
+h1, h3, h4, h5{
+    
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+h2{
+    font-family: 'El Messiri', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #a1b1c2;
+}
+h3{
+    font-size: 150%;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+    line-height: 2rem;
+    float: center;
+}
+.p_small{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110%;
+    line-height: 1.5rem;
+    float: center;
+}
+.row{
+    width: 99.5vw;
+    transition: 0.6s all;
+}
+.row_small{
+    width: 85vw;
+    transition: 0.6s all;
+}
+.sidebar{
+    float: left;
+    width: 12rem;
+    margin-left: -12rem;
+    height: 100%;
+    background: #a1b1c2;
+    overflow: hidden;
+    transition: 0.6s all;
+    position: fixed;
+}
+.side{
+    margin-left: 0;
+}
+
+.sidebar ul{
+    margin: 0;
+    padding: 0;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: #313131;
+    height: 5rem;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 5rem;
+    text-align: center;
+    display: block;
+    transition: 0.6s all;
+}
+.sidebar ul li:hover{
+    background: #a7bcd4
+}
+.pub-logo_menu{
+    height: 9rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.btn{
+    float: left;
+    margin: 2rem 2rem;
+    /* padding: 1rem 1rem; */
+    font-size: 340%;
+    text-decoration: none;
+    color: #a1b1c2;
+    font-family: Ionicons;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+    transition: 0.6s all;
+    color:#313131;
+}
+.btnc{
+    margin-left: 13rem;
+    transition: 0.6s all;
+}
+.btn:before{
+    content: "\f20d";
+    position: fixed;
+    z-index: 99;
+}
+.btnc:before{
+    content:"\f12a";
+    position: fixed;
+    z-index: 99;
+}
+
+/* MAIN CONTENT */
+.book_link{
+    float: right;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 150%;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: #313131;
+    text-decoration: none;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+.icons_social{
+    float: left;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    transition: 0.6s all;
+}
+.icons_social-move{
+    margin-left: 18rem;
+    transition: 0.6s all;
+}
+.icons1,
+.icons2,
+.icons1_bot,
+.icons2_bot{
+margin-right: 2rem;
+}
+.icons1,
+.icons2,
+.icons3,
+.icons1_bot,
+.icons2_bot,
+.icons3_bot{
+    color:#313131;
+    height: 1.4rem;
+    width: 1.4rem;
+}
+.title{
+    font-family: 'Lora', serif;
+    font-size: 330%;
+    line-height: 3.5rem;
+    position: fixed;
+    top: 13.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: 1.2rem;
+    z-index: 98;
+    text-transform: uppercase;
+    transition: 0.6s all;
+    width: 60%;
+    color: #313131;
+}
+.link{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-family: 'Old Standard TT', serif;
+    font-size: 230%;
+    letter-spacing: 0.5rem;
+    line-height: 2rem;
+    transition: 0.6s all;
+    position:relative;
+    top:40%;
+    left:25%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    z-index: 98;
+    padding: 1rem;
+    background-color: white;
+    opacity:0.6;
+    width:60%;
+
+}
+.link_small{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-family: 'Old Standard TT', serif;
+    font-size: 150%;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    transition: 0.6s all;
+    position:relative;
+    top:40%;
+    left:32%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    z-index: 98;
+    padding: 1rem;
+    background-color: white;
+    opacity:0.6;
+    width:60%;
+}
+
+.title-move{
+    font-family: 'Lora', serif;
+    font-size: 290%;
+    line-height: 3.5rem;
+    position: fixed;
+    top: 14%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: 0.6rem;
+    z-index: 98;
+    text-transform: uppercase;
+    transition: 0.6s all;
+    width: 60%;
+    
+}
+.menus{
+    background-image: url(images/food.jpg);
+}
+.farm{
+    background-image: url(images/car4.jpg);
+}
+.plain{
+    background-color: #ff9a76;
+    padding: 2rem;
+}
+.blue-sec{
+    background-color: #a1b1c2;
+    padding: 2rem;
+}
+.about{
+    background-image: url(images/about.jpg);
+}
+.wine-list{
+    background-image: url(images/wine.jpg);
+}
+.func{
+    background-image: url(images/car2.jpg);
+}
+
+.photo_background,
+.photo_background1{
+    float:left;
+    height: 40vh;
+    background-size: cover;
+    margin-right: 1rem;
+    transition: 0.6s all; 
+}
+.photo_background_small{
+    opacity:0.5;
+    float:left;
+    height: 35vh;
+    background-size: cover;
+    transition: 0.6s all; 
+}
+.photo_background1_small{
+    opacity:0.5;
+    float:left;
+    height: 100vh;
+    background-size: cover;
+    transition: 0.6s all; 
+}
+.container{
+    transition: 0.6s all; 
+    margin-left: 0;
+}
+.container_small{
+    margin-left: 13rem;
+    transition: 0.6s all;
+}
+.first{
+    margin-top: 6rem;
+}
+
+/* footer */
+.find,
+.open,
+.mailClub{
+    background-color: #a1b1c2;
+    margin:0;
+    padding:2rem;
+    height: 100vh;
+    text-align: center;
+}
+.mailClub{
+    margin-right: 1rem;
+}
+.adress{
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+    size: 1rem;
+}
+
+table{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+}
+
+tr:nth-child(even){
+    background-color: #a7bcd4;
+}
+th{
+    font-weight: bold;
+}
+hr{
+    background-color: #fcbf1e;
+    border-style: solid none none;
+    border-width: thin;
+    border-color:#f4f6ff;
+    width: 30%;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    padding:1rem;
+    width: 32vw;
+}
+.mySlides {
+    display: none;
+    text-align: center;
+    width: 30vw;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+} 
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.ic{
+    width: 5rem;
+    height: 5rem;
+}
+.venue{
+    background-color: #ff9a76;
+    padding: 2rem;
+    padding-top: 3rem;
+    height: 40vh;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.pub-logo{
+    height: 12rem;
+    margin-left: 2rem;
+}
+.venue_title{
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+.pub_logos{
+    text-align: center;
+    margin-left: 3rem;
+    
+}
