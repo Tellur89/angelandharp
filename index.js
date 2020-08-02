@@ -1,7 +1,7 @@
 $(".btn_menu").on("click", function(){
     $(".btn_menu").toggleClass("btnc");
     $(".sidebar").toggleClass("side");
-    $(".container").toggleClass("container_small");
+    $(".container-fluid").toggleClass("container_small");
     $(".title").toggleClass("title-move");
     $(".icons_social").toggleClass("icons_social-move");
     $(".row").toggleClass("row_small");
@@ -24,4 +24,5 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 3000);
 }
+
 
