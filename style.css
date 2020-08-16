@@ -317,39 +317,42 @@ margin-right: 2rem;
 /* slideshow icons */
 .pic_plate,
 .pic_fish,
-.pic_drink{
-    margin:auto;
-    float:right;
-    background-size: cover;
-    transition: 0.6s all;
-    width: 60%;
-    display: inline;
-}
+.pic_drink
 .pic_burger,
 .pic_plate_steak{
-    margin:auto;
-    float:left;
-    background-size: cover;
-    transition: 0.6s all;
+    position: relative;
+}
+.pic_plate{
     width: 60%;
-    display: inline;
+    float: right;
 }
 .pic_burger{
-    margin-top: -2rem;
+    width: 60%;
+    float: left;
 }
 .pic_fish{
-    width: 60%;
-    margin-top: -5rem;
+    width: 40%;
+    float: right;
+}
+.pic_plate_steak{
+    width:60%;
+    float: left;
 }
 .pic_drink{
-    width:40%;
-    margin-top: -5.3rem;
+    width: 40%;
+    float: right;
 }
+
+
+
+
 .slide_text_left{
     display: inline;
     width: 40%;
     float: left;
     margin: auto;
+    margin-top: -1rem;
+    line-height: 1rem;
 }
 
 .slide_text_right{
@@ -358,11 +361,9 @@ margin-right: 2rem;
     float: right;
     margin: auto;
     margin-top: -1rem;
+    line-height: 1rem;
 }
-.slide_text_right_small{
-    font-size: 0.7rem;
-    margin-top: -2rem;
-}
+
 
 .fade {
     -webkit-animation-name: fade;

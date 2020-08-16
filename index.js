@@ -10,7 +10,7 @@ $(".btn_menu").on("click", function(){
     $(".row_footer").toggleClass("row_footer_small");
     $(".book_link").toggleClass("book_link_small");
     $(".footer").toggleClass("row_small");
-    $(".slide_text_right").toggleClass("slide_text_right_small");
+   
     $(".row_about").toggleClass("row_about_small");
     
 });
