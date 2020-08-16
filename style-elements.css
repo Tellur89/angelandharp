@@ -8,6 +8,14 @@ body, html{
     font-family: 'Montserrat', sans-serif;
     
 }
+.txt h2{
+    font-family: 'Lora', serif;
+    font-weight: 1000;
+    color: #313131;
+}
+.txt h4{
+    font-weight: 1000;
+}
 h1{
     font-family: 'Lora', serif;
     font-size: 1.9em;

@@ -137,8 +137,6 @@ margin-right: 2rem;
 .icons2_bot,
 .icons3_bot{
     color:#313131;
-    height: 1.4rem;
-    width: 1.4rem;
 }
 
 .title{
@@ -155,6 +153,9 @@ margin-right: 2rem;
     transition: 0.6s all;
     width: 60%;
     color: #313131;
+}
+.logo_behind{
+    display:none;
 }
 .title-move{
     font-family: 'Lora', serif;
@@ -247,10 +248,12 @@ margin-right: 2rem;
     flex-wrap: nowrap;
     position: relative;
     transition: 0.6s all;
+    backface-visibility: hidden;
 }
 .row_small{
     transition: 0.6s all;
     margin-right: 210px;
+    backface-visibility: hidden;
 }
 .row_nomargin{
     margin-right: 0;
@@ -308,12 +311,15 @@ margin-right: 2rem;
     padding:2rem;
     background-color: #a1b1c2;
     width: 32vw;
+    transition: all 0.6s;
 }
 .mySlides {
     display: none;
     text-align: center;
     width: auto;
+    transition: all 0.6s;
 }
+
 /* slideshow icons */
 .pic_plate,
 .pic_fish,
@@ -321,12 +327,16 @@ margin-right: 2rem;
 .pic_burger,
 .pic_plate_steak{
     position: relative;
+    margin: auto;
+    transition: all 0.6s;
 }
 .pic_plate{
+
     width: 60%;
     float: right;
 }
 .pic_burger{
+    margin-top: -2rem;
     width: 60%;
     float: left;
 }
@@ -339,13 +349,24 @@ margin-right: 2rem;
     float: left;
 }
 .pic_drink{
+    margin-top: -1.7rem;
     width: 40%;
     float: right;
 }
-
-
-
-
+.pic_small{
+    width: 40%;
+    margin: auto;
+}
+.txt_small,
+.txt_small h2,
+.txt_small h3,
+.txt_small h4{
+    width: 50%;
+    font-size: 120%;
+    line-height: 2rem;
+    margin: auto;  
+    transition: all 0.6s;
+}
 .slide_text_left{
     display: inline;
     width: 40%;
@@ -353,8 +374,8 @@ margin-right: 2rem;
     margin: auto;
     margin-top: -1rem;
     line-height: 1rem;
+    transition: all 0.6s;
 }
-
 .slide_text_right{
     display: inline;
     width: 40%;
@@ -362,6 +383,7 @@ margin-right: 2rem;
     margin: auto;
     margin-top: -1rem;
     line-height: 1rem;
+    transition: all 0.6s;
 }
 
 
@@ -382,10 +404,12 @@ margin-right: 2rem;
 .about{
     background-image: url(images/pub.jpg);  
     background-size: 40%;  
+    transition: all 0.6s;
 }
 .row_about{
    margin:auto;
    margin-bottom: 1rem;
+   transition: all 0.6s;
 }
 
 /* footer */
@@ -397,15 +421,18 @@ margin-right: 2rem;
     padding:2rem;
     height: 80vh;
     text-align: center;
+    transition: all 0.6s;
 }
 
 
 .adress{
     line-height: 2rem;
     size: 1rem;
+    transition: all 0.6s;
 }
 .row_footer{
     background-color: #a1b1c2;
+    transition: all 0.6s;
 }
 /* venue */
 .venue{
@@ -416,28 +443,36 @@ margin-right: 2rem;
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    transition: all 0.6s;
 }
 .row_venue{
     background-color: #a1b1c2;
     padding: 1rem;
     margin:auto;
+    transition: all 0.6s;
 }
 .row_venue_small,
 .row_footer_small{
     transition: 0.6s all;
     margin-right: 12rem;
+    transition: all 0.6s;
+    backface-visibility: hidden;
 }
 .row_footer_small{
     padding-bottom: 5rem;
     margin-right: 12rem;
+    transition: all 0.6s;
 }
 .row_about_small{
     margin-right: 11rem;
+    transition: all 0.6s;
+    backface-visibility: hidden;
 }
 
 .pub-logo{
     height: 12rem;
     margin:2rem 2rem 0 2rem;
+    transition: all 0.6s;
 }
 .axe{
     margin-left: 0;
@@ -447,15 +482,15 @@ margin-right: 2rem;
     margin-bottom: 4rem;
     display: block;
     width: 80vw;
-    margin:auto
+    margin:auto;
+    transition: all 0.6s;
 }
 .pub_logos{
     text-align: center;
     width: 100%;
     margin:auto;
+    transition: all 0.6s;
 }
-.menu_link{
-    font-family: 'Julius Sans One', sans-serif;
-}
+
 
 

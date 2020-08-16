@@ -10,7 +10,9 @@ $(".btn_menu").on("click", function(){
     $(".row_footer").toggleClass("row_footer_small");
     $(".book_link").toggleClass("book_link_small");
     $(".footer").toggleClass("row_small");
-   
+    $(".pic").toggleClass("pic_small");
+    $(".txt").toggleClass("txt_small");
+    
     $(".row_about").toggleClass("row_about_small");
     
 });
