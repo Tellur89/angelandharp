@@ -41,13 +41,15 @@
         
     }
     .book_link{
-        position:absolute;
-        top:50%;
-        left:25%;
+        position:relative;
+        top:42vh;
+        left:-22vw;
         text-align: center;
         font-weight: 800;
         font-size: 120%;
-        width: 50%;  
+        width: 50%; 
+        margin: auto; 
+        
     }
     #sidebarCollapse,
     .icon_menu,
@@ -65,7 +67,7 @@
         margin-right: 1rem;
     }
     .open{
-        margin-bottom: 8rem;
+        margin-bottom: 12rem;
     }
     .row_venue{
         margin-right: 1rem;
@@ -160,6 +162,10 @@
 }
 .plain{
     height: 60vh;
+}
+.link{
+    position: relative;
+    top:40%;
 }
 
 }
