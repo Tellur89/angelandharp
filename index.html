@@ -6,9 +6,11 @@
     <title>The Angel and Harp</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=El+Messiri:wght@400;500&family=Julius+Sans+One&family=Lora:wght@400;500&family=Montserrat:wght@300;400;500&family=Old+Standard+TT&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;800;1000&family=El+Messiri:wght@400;500&family=Julius+Sans+One&family=Lora:wght@400;500&family=Montserrat:wght@300;400;500&family=Old+Standard+TT&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-media.css">
+    <link rel="stylesheet" href="style-elements.css">
 </head>
 <body>
     <div class="wrapper">
@@ -20,7 +22,7 @@
                 <img class="pub-logo_menu" src="images/angel_logo.png" alt="angel logo">
                 <li>
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Food & Drink</a>
-                    <ul class="collapse lisst-unstyled" id="homeSubmenu">
+                    <ul class="collapse lisst-unstyled" id="homeSubmenu" style="list-style: none;">
                         <li>
                             <a href="#">Food menu</a>
                         </li>
@@ -30,7 +32,16 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Book a table</a>
+                    <a href="#">Christmas</a>
+                </li>
+                <li>
+                    <a href="#">Music & Events</a>
+                </li>
+                <li>
+                    <a href="#">Delivery</a>
+                </li>
+                <li>
+                    <a href="#">Functions</a>
                 </li>
                 <li>
                     <a href="#">Order at the table</a>
@@ -43,7 +54,7 @@
                 </li>
             </ul>
         </nav>
-        <div id="content">
+        <div id="content" class="content">
             <nav class="navbar navbar-expand-lg">
                 <div class="icon_menu container-fluid">
                     <button type="button" id="sidebarCollapse" class="btn btn_menu">
@@ -62,91 +73,120 @@
             <div class="title">The Angel and Harp</div>
             
             <div class="container-fluid first">
-                <div class="row">
-                    <div class="menus col-lg-6 col-12  photo_background">    
-                        <a class="link link_food" href="#">Food & Drink</a>
+                <div class="row first">
+                    <div class="christmas col-lg-4 col-12 photo_background">
+                        <a class="link" href="#">Christmas</a>          
                     </div>
-                    <div class="farm col-lg-6 col-12 photo_background">
-                        <a class="link" href="#">Farm Shop</a>          
+                    <div class="food col-lg-4 col-12  photo_background">    
+                        <a class="link link_food" href="#">Food menus</a>
+                    </div>
+                    <div class="drink col-lg-4 col-12  photo_background">    
+                        <a class="link link_food" href="#">Drinks menus</a>
                     </div>
                 </div>
             </div>
 
             <div class="container-fluid">
                 <div class="row">
-                    <div class="slideshow-container col-lg-4 col-12 photo_background">
+                    <div class="slideshow-container col-lg-6 col-12 photo_background">
         
                         <div class="mySlides fade">
-                            <i class="ic fas fa-utensils fa-5x"></i>
+                            <!-- <i class="ic fas fa-utensils fa-5x"></i> -->
+                            <img src="images/plate.png" class="pic_plate">
                             <br>
-                            <h1>Monday</h1>
-                            <h2>2 for 1</h2>
-                            <h3>Roast Dinner</h3>
+                            <div class="slide_text_left">
+                            <h2>Monday</h2>
+                            <h3>2 for 1</h3>
+                            <h4>Roast Dinner</h4>
+                            </div>
                         </div>
         
                         <div class="mySlides fade">
-                            <i class="ic fas fa-hamburger fa-5x"></i>
+                            <!-- <i class="ic fas fa-hamburger fa-5x"></i> -->
+                            <img src="images/burger.png" class="pic_burger">
                             <br>
-                            <h1>Tuesday</h1>
-                            <h2>2 for 1</h2>
-                            <h3>Burgers & Pizza</h3>
+                            <div class="slide_text_right">
+                            <h2>Tuesday</h2>
+                            <h3>2 for 1</h3>
+                            <h4>Burgers & Pizza</h4>
+                        </div>
                         </div>
         
                         <div class="mySlides fade">
-                            <i class="ic fas fa-fish fa-5x"></i>
+                            <!-- <i class="ic fas fa-fish fa-5x"></i> -->
+                            <img src="images/fish.png" class="pic_fish">
                             <br>
-                            <h1>Wednesday</h1>
-                            <h2>2 for 1</h2>
-                            <h3>Fish</h3>
+                            <div class="slide_text_left">
+                            <h2>Wednesday</h2>
+                            <h3>2 for 1</h3>
+                            <h4>Fish</h4>
+                        </div>
                         </div>
         
                         <div class="mySlides fade">
-                            <i class="ic fas fa-glass-cheers fa-5x"></i>
+                            <!-- <i class="ic fas fa-glass-cheers fa-5x"></i> -->
+                            <img src="images/plate.png" class="pic_plate_steak">
                             <br>
-                            <h1>Thursday</h1>
-                            <h2>Steak & Grape</h2>
-                            <h3>Steak, Frites & glass of wine £15</h3>
+                            <div class="slide_text_right txt">
+                            <h2>Thursday</h2>
+                            <h3>Steak & Grape</h3>
+                            <h4>Steak, Frites & glass of wine £15</h4>
+                        </div>
                         </div>
         
                         <div class="mySlides fade">
-                            <i class="ic fas fa-cocktail fa-5x"></i>
+                            <!-- <i class="ic fas fa-cocktail fa-5x"></i> -->
+                            <img src="images/cocktail.png" class="pic_drink">
                             <br>
-                            <h1>Friday</h1>
-                            <h2>4 - 9pm</h2>
-                            <h3>2 for 1 Cocktails</h3>
+                            <div class="slide_text_left">
+                            <h2>Friday</h2>
+                            <h3>4 - 9pm</h3>
+                            <h4>2 for 1 Cocktails</h4>
+                        </div>
                         </div>
         
                     </div>
-                    <div class="about col-lg-4 col-12 photo_background"><a class="link link_food" href="#">About</a></div>
-                    <div class="wine-list col-lg-4 col-12 photo_background"><a class="link link_food" href="#">Wine list</a></div>
+                    <div class="delivery col-lg-6 col-12 photo_background"><a class="link link_food" href="#">Delivery</a></div>
+                    <!-- <div class="wine-list col-lg-4 col-12 photo_background"><a class="link link_food" href="#">Wine list</a></div> -->
                 </div>
             </div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="func col-lg-6 col-12 photo_background col"><a class="link link_food" href="#">functions</a></div>
                     <div class="plain col-lg-6 col-12 photo_background col">
-                      <div>
-                        <h1>very nice title</h1>
+                      <div class="events">
+                        <h1>Music & Events</h1>
                         <hr>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus ante non metus convallis, et mollis dui sollicitudin.</p>
-                        <a class="btn btn-blue" href="blue-sec.html">More ></a>
+                        <a class="btn btn-blue" href="blue-sec.html">Find out more ></a>
                       </div>
                     </div>
                   </div>
             </div>
-            <div id="footer" class="container-fluid">
-                <div class="row row_nomargin">
-                    <div id="find" class="col-lg-4 col-12 photo_background1">
+            <div class="container-fluid">
+                <div class="row row_about">
+                    <div class="about col photo_background">
+                        <a href="#" class="link link_food">about</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="container-fluid">
+                <div class="row row_footer">
+                    <div class="find col-lg-4 col-12 photo_back">
                         <h1>find us</h1>
                         <hr>
                         <br>
                         <div class="icons_social__bottom">
-                        <a href="http://www.facebook.com"><i class="icons1_bot fab fa-facebook-f fa-1x"></i></a>
-                        <a href="http://www.instagram.com"><i class="icons2_bot fab fa-instagram fa-1x"></i></a>
-                        <a href="mailto:tellur.beryl@gmail.com"><i class="icons3_bot fas fa-envelope fa-1x"></i></a>
+                        <a href="http://www.facebook.com"><i class="icons1_bot fab fa-facebook-f fa-2x"></i></a>
+                        <a href="http://www.instagram.com"><i class="icons2_bot fab fa-instagram fa-2x"></i></a>
+                        <a href="mailto:tellur.beryl@gmail.com"><i class="icons3_bot fas fa-envelope fa-2x"></i></a>
                         </div>
                         <br><br>
-                        <i class="fas fa-home fa-2x"></i> <br><br>
+                        <i class="fas fa-home fa-1x"></i> <br><br>
                         <p class="adress">The Angel and Harp <br>
                         16 Church Street, <br>
                         Great Dunmow,<br>
@@ -154,12 +194,12 @@
                         CM6 2AD
                         </p>
                         <br>
-                        <i class="fas fa-phone fa-2x"></i>
+                        <i class="fas fa-phone fa-1x"></i>
                         <br><br>
                         <p>01371 859 259</p>
         
                     </div>
-                    <div id="open" class="col-lg-4 col-12 photo_background1 feature-box">
+                    <div class="open col-lg-4 col-12 photo_back ">
                         <h1>opening times</h1>
                         <hr>
                         <table>
@@ -219,7 +259,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div id="mailClub" class="col-lg-4 col-12 photo_background1">
+                    <div class="mailClub col-lg-4 col-12 photo_back">
                         <h1>mailing club</h1>
                         <hr>
                         <p class="p_small">Join our Mailing Club to receive notifications of great offers and events held at the Angel & Harp. To receive notifications, simply enter your name and email address below.</p>
@@ -231,54 +271,24 @@
                     </div>
                 </div>
                 <div class="container-fluid">
-                    <div class="row row_nomargin1">
-                        <div class="venue photo_background">
+                    <div class="row row_venue">
+                        <div class="venue photo_back">
                             <h1 class="venue_title">Have you checked our other venues?</h1>
                             
                             <div class="pub_logos photo_background">
-                            <img class="pub-logo btn axe"src="images/axe_logo.png" alt="axe logo">
+                            <img class="pub-logo btn"src="images/axe_logo.png" alt="axe logo">
                             <img class="pub-logo btn" src="images/wh_logo.png" alt="white hart logo">
                             <img class="pub-logo btn" src="images/duke_logo.png" alt="duke logo">
-                            <img class="pub-logo btn pub-logo_swan" src="images/swan_logo.png" alt="swan logo">
+                            <img class="pub-logo btn" src="images/swan_logo.png" alt="swan logo">
                             </div>
                         </div>  
                     </div>
-            
                 </div>
-
-
-
-
-
-
-
-
-
-
-
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
   <!-- jQuery and JS scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="index.js" charset="utf-8"></script>
-    <script>
-
-$(document).ready(function(){
-    $("#sidebarCollapse").on("click", function(){
-        $("#sidebar").toggleClass("active");
-    });
-});
-    </script>
 </body>
