@@ -65,14 +65,14 @@
         margin-right: 1rem;
     }
     .open{
-        margin-bottom: 6rem;
+        margin-bottom: 8rem;
     }
     .row_venue{
         margin-right: 1rem;
-        height: 100vh;
+        height: 130vh;
     }
     .venue{
-        height: 90vh;
+        height: 120vh;
     }
     .venue_title{
         margin: auto;
@@ -148,6 +148,7 @@
 }
 .txt h2{
     font-size: 1.1rem;
+    padding-right: 1.1rem;
 }
 .txt h3{
     line-height: 2rem;
